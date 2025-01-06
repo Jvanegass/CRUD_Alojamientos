@@ -1,0 +1,156 @@
+/* Estilo general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Estilo específico para páginas de autenticación (login y registro) */
+body.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('http://localhost/CRUD_Alojamientos/assets/img/login_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.auth-page .container {
+    width: 100%;
+    max-width: 500px; /* Limitar el ancho máximo a 500px */
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.auth-page h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body.auth-page input {
+    margin-bottom: 15px;
+}
+
+body.auth-page .btn-primary {
+    width: 100%;
+}
+
+body.auth-page p {
+    color: white;
+    text-align: center;
+}
+
+/* Estilo específico para el panel de administración */
+body.admin-page {
+    background: url('http://localhost/CRUD_Alojamientos/assets/img/admin_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header moderno */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h3 {
+    margin: 0;
+}
+
+header button,
+header a {
+    margin-left: 10px;
+}
+
+/* Contenedor principal */
+body.admin-page .container {
+    margin-top: 100px; /* Espacio debajo del header */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla moderna */
+body.admin-page table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.admin-page table thead {
+    background: #007bff;
+    color: white;
+    text-align: left;
+}
+
+body.admin-page table th,
+body.admin-page table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+body.admin-page table tbody tr:hover {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+/* Botones */
+body.admin-page .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+body.admin-page .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Modal */
+body.admin-page .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Alertas */
+.alert {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación de entrada */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
